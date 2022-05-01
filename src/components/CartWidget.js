@@ -1,7 +1,7 @@
 import cartIc from "./cartIc.svg";
-import "./Cart.css";
+import "./CartWidget.css";
 
-function ImCart() {
+function CartWidget() {
   return (
     <div className="cart">
       <button className="cartBtn">
@@ -11,4 +11,4 @@ function ImCart() {
   );
 }
 
-export default ImCart;
+export default CartWidget;

@@ -1,6 +1,6 @@
 import logo from "../images/logo.png";
 import "./NavBar.css";
-import Cart from "./Cart";
+import CartWidget from "./CartWidget";
 
 function NavBar() {
   return (
@@ -41,7 +41,7 @@ function NavBar() {
           </li>
         </ul>
       </nav>
-      <Cart />
+      <CartWidget />
     </header>
   );
 }
