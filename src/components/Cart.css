@@ -1,0 +1,11 @@
+.cartBtn {
+  background-color: #ffc107;
+  border: 1px solid;
+  cursor: pointer;
+  width: 35px;
+  height: 30px;
+}
+.cartBtn:hover {
+  border: 1px solid #212121;
+  opacity: 0.7;
+}
