@@ -1,0 +1,43 @@
+.itemCount {
+  display: inline-block;
+  text-align: center;
+  border: #eccb00 solid 3px;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 23px;
+}
+
+.itemCount__lessBtnAdd {
+  background: #eccb00;
+  border: 2px solid #fefefe;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.itemCount__lessBtnRest {
+  background: #eccb00;
+  border: 2px solid #fefefe;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.itemCount__lessBtnCart {
+  background: #eccb00;
+  border: 2px solid #fefefe;
+  color: #fff;
+  display: inline-block;
+  font-size: 14px;
+  padding: 5px;
+  margin: 5px;
+  cursor: pointer;
+}
+.itemCount__lessBtnAdd .itemCount__lessBtnRest .itemCount__lessBtnCart :hover {
+  opacity: 0.7;
+}
