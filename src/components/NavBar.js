@@ -5,8 +5,10 @@ import CartWidget from "./CartWidget";
 function NavBar() {
   return (
     <header className="header">
-      {<img className="header__img" src={logo} alt="" />}
-      <p className="brand">CNC Tecnología</p>
+      <div className="header__log">
+        {<img className="header__img" src={logo} alt="" />}
+        <p className="brand">CNC Tecnología</p>
+      </div>
       <nav className="navBar">
         <ul className="navBar__list">
           <li className="navBar__item">
@@ -27,11 +29,6 @@ function NavBar() {
           <li className="navBar__item">
             <a className="navBar__link" href="#">
               Módulos
-            </a>
-          </li>
-          <li className="navBar__item">
-            <a className="navBar__link" href="#">
-              Motores
             </a>
           </li>
           <li className="navBar__item">

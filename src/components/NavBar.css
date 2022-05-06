@@ -5,7 +5,12 @@
   font-size: 15px;
   color: black;
 }
+.header__log {
+  display: flex;
+  flex-flow: row wrap;
+}
 .header__img {
+  padding: 15px;
   height: 50px;
 }
 .brand {

@@ -25,7 +25,7 @@ function ItemCount({ stock, initial, onAdd }) {
     <div className="itemCount">
       <img className="itemCount__img" src={itemImg} alt="" />
       <div className="itemCount__descrip">
-        <h2 className="itemCount__tit">Monitores</h2>
+        <h2 className="itemCount__tit">Monitor A90L-0001-0092</h2>
         <p>Ver detalle</p>
         <p>Unidades: {count}</p>
         <button className="itemCount__lessBtnAdd" onClick={add}>
