@@ -1,4 +1,4 @@
-import cartIc from "./cartIc.svg";
+import cartIc from "../images/cartIc.svg";
 import "./CartWidget.css";
 
 function CartWidget() {
