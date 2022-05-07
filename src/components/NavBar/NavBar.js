@@ -6,7 +6,7 @@ function NavBar() {
   return (
     <header className="header">
       <div className="header__log">
-        {<img className="header__img" src={logo} alt="" />}
+        <img className="header__img" src={logo} alt="" />
         <p className="brand">CNC Tecnología</p>
       </div>
       <nav className="navBar">
