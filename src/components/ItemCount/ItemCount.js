@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import itemImg from "../images/monitor.jpg";
+import itemImg from "../../images/monitor.jpg";
 import "./ItemCount.css";
 
 function ItemCount({ stock, initial, onAdd }) {

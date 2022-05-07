@@ -1,4 +1,4 @@
-import ItemCount from "./ItemCount";
+import ItemCount from "../ItemCount/ItemCount";
 
 function ItemListContainer({ greeting }) {
   return (
