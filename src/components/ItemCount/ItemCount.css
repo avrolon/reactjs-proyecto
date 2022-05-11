@@ -1,7 +1,6 @@
 .itemCount {
   display: inline-block;
   text-align: center;
-  border: #eccb00 solid 3px;
   border-radius: 10px;
   margin: 10px;
   padding: 23px;
@@ -40,4 +39,10 @@
 }
 .itemCount__lessBtnAdd .itemCount__lessBtnRest .itemCount__lessBtnCart :hover {
   opacity: 0.7;
+}
+
+p {
+  margin-top: -25px;
+  margin-bottom: 10px;
+  font-size: 25px;
 }

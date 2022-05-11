@@ -1,0 +1,6 @@
+.itemList {
+  display: flex;
+  text-align: center;
+  margin-top: 60px;
+  padding: 20px;
+}
