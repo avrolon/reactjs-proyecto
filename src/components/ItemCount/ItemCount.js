@@ -32,6 +32,8 @@ function ItemCount({ stock, initial, onAdd }) {
       <button className="itemCount__lessBtnCart" onClick={addCart}>
         Comprar
       </button>
+      <br />
+      <p className="aditional">Ver detalle</p>
     </div>
   );
 }

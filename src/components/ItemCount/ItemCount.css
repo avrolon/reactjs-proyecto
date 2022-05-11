@@ -47,3 +47,9 @@ p {
   font-size: 20px;
   color: black;
 }
+
+.aditional {
+  margin: 5px;
+  font-size: 12px;
+  text-decoration: underline;
+}
