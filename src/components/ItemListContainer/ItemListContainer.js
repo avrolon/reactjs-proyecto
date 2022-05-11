@@ -41,7 +41,7 @@ function ItemListContainer({ greeting }) {
 
   return (
     <div className="itemListContainer">
-      <h1 className="itemListContainer__title" style={{ color: "#eccb00" }}>
+      <h1 className="itemListContainer__title" style={{ color: "black" }}>
         {greeting}
         {loading ? <h2>Cargando...</h2> : <ItemList products={products} />}
       </h1>
