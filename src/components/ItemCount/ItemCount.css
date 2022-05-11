@@ -8,7 +8,7 @@
 
 .itemCount__lessBtnAdd {
   background: #eccb00;
-  border: 2px solid #fefefe;
+  border: 2px solid #eccb00;
   color: #fff;
   display: inline-block;
   font-size: 14px;
@@ -19,7 +19,7 @@
 
 .itemCount__lessBtnRest {
   background: #eccb00;
-  border: 2px solid #fefefe;
+  border: 2px solid #eccb00;
   color: #fff;
   display: inline-block;
   font-size: 14px;
@@ -29,7 +29,7 @@
 }
 .itemCount__lessBtnCart {
   background: #eccb00;
-  border: 2px solid #fefefe;
+  border: 2px solid #eccb00;
   color: #fff;
   display: inline-block;
   font-size: 14px;
@@ -42,7 +42,8 @@
 }
 
 p {
-  margin-top: -25px;
+  margin-top: -20px;
   margin-bottom: 10px;
-  font-size: 25px;
+  font-size: 20px;
+  color: black;
 }

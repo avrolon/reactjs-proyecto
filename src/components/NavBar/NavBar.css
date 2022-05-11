@@ -16,6 +16,7 @@
 .brand {
   font-weight: 600;
   font-size: 25px;
+  margin-top: 25px;
 }
 .navBar__list {
   display: flex;

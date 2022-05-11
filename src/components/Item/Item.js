@@ -1,5 +1,6 @@
 import itemImg from "../../images/monitor.jpg";
 import ItemCount from "../ItemCount/ItemCount";
+import "./Item.css";
 
 function Item({ id, name, price, img }) {
   return (

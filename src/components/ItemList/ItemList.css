@@ -1,6 +1,17 @@
+.item {
+  background: #dde2e5;
+  border: 2px solid #fefefe;
+  color: black;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  justify-content: center;
+}
+
 .itemList {
   display: flex;
   text-align: center;
   margin-top: 60px;
   padding: 20px;
+  color: #adb5bd;
 }

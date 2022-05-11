@@ -5,19 +5,19 @@ const products = [
   {
     id: 1,
     name: "Monitor A90L-0001-0092",
-    price: 1000,
+    price: 1500,
     img: "../../images/monitor.jpg",
   },
   {
     id: 2,
-    name: "Monitor A90L-0001-0093",
-    price: 1000,
+    name: "Encoder A860-2020-T301",
+    price: 1100,
     img: "../../images/monitor.jpg",
   },
   {
     id: 3,
-    name: "Monitor A90L-0001-0094",
-    price: 1000,
+    name: "Cooler A90L-0001-0316",
+    price: 800,
     img: "../../images/monitor.jpg",
   },
 ];
