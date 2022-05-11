@@ -20,6 +20,12 @@ const products = [
     price: 800,
     img: "../../images/monitor.jpg",
   },
+  {
+    id: 3,
+    name: "Módulo A50L-0001-0096",
+    price: 500,
+    img: "../../images/monitor.jpg",
+  },
 ];
 
 const getFetch = new Promise((resolve) => {

@@ -1,0 +1,17 @@
+.item {
+  background: #dde2e5;
+  border: 2px solid #fefefe;
+  color: black;
+  display: flex;
+  font-size: 20px;
+  cursor: pointer;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.item__info {
+  color: #eccb00;
+}
+
+.item__price {
+  margin-bottom: -5px;
+}
