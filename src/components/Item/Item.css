@@ -1,12 +1,21 @@
 .item {
   background: #dde2e5;
-  border: 2px solid #fefefe;
+  border-radius: 20px;
   color: black;
-  display: flex;
+  display: inline-block;
   font-size: 20px;
-  cursor: pointer;
   justify-content: center;
   flex-wrap: wrap;
+  margin-left: 15px;
+  overflow: hidden;
+  position: relative;
+  float: none;
+}
+.item__img {
+  width: 280px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  border-radius: 20px;
 }
 .item__info {
   color: #eccb00;
