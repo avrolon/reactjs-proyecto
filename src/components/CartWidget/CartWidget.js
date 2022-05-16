@@ -1,13 +1,15 @@
-import cartIc from "../../images/cartIc.svg";
+import { Link } from "react-router-dom";
 import "./CartWidget.css";
 
 function CartWidget() {
   return (
-    <div className="cart">
-      <button className="cartBtn">
-        <img className="favCar" src={cartIc} alt="" />
-      </button>
-    </div>
+    <Link to="/cart">
+      <div className="cartWidget">
+        <span className="cartWidget__icon">
+          <i class="bi bi-cart3"></i>
+        </span>
+      </div>
+    </Link>
   );
 }
 

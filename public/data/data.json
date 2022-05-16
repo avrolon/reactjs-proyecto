@@ -1,0 +1,42 @@
+[
+  {
+    "id": "01",
+    "category": "Monitores",
+    "name": "Monitor",
+    "price": "1500",
+    "photo": "/images/monitor.jpg",
+    "details": "Códigos en stock: A90L-0001-0092, A90L-0001-0093"
+  },
+  {
+    "id": "02",
+    "category": "Encoders",
+    "name": "Encoder",
+    "price": "1100",
+    "photo": "/images/encoder.jpg",
+    "details": "Códigos en stock: A860-2020-T301, A860-0304-T011, A860-0001-T001"
+  },
+  {
+    "id": "03",
+    "category": "Módulos",
+    "name": "Módulo",
+    "price": "800",
+    "photo": "/images/modulo.jpg",
+    "details": "Códigos en stock: A50L-0001-0096, A50L-0001-0179/15A, A50L-0001-0109"
+  },
+  {
+    "id": "04",
+    "category": "Coolers",
+    "name": "Cooler",
+    "price": "500",
+    "photo": "/images/cooler.jpg",
+    "details": "Códigos en stock: A90L-0001-0316, A90L-0001-0317, A90L-0001-0508"
+  },
+  {
+    "id": "05",
+    "category": "Otros repuestos",
+    "name": "Otros repuestos",
+    "price": "-",
+    "photo": "/images/placa.jpg",
+    "details": "Placas, motores, fusibles, sensores, pulsadores, keyboard, conectores, keysheet."
+  }
+]

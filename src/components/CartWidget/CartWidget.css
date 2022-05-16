@@ -1,11 +1,12 @@
-.cartBtn {
-  background-color: #eccb00;
-  border: 1px solid;
-  cursor: pointer;
-  width: 35px;
-  height: 30px;
+.cartWidget {
+  display: flex;
+  position: relative;
 }
-.cartBtn:hover {
-  border: 1px solid #212121;
+.cartWidget:hover {
   opacity: 0.7;
+}
+.cartWidget__icon {
+  margin-top: -30px;
+  color: rgb(10, 85, 142);
+  font-size: 2rem;
 }

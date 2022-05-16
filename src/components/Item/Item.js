@@ -1,16 +1,17 @@
-import itemImg from "../../images/monitor.jpg";
 import ItemCount from "../ItemCount/ItemCount";
 import "./Item.css";
 
-function Item({ id, name, price, img }) {
+function Item({ prod }) {
   return (
     <div className="item">
-      <img className="item__img" src={itemImg} alt="" />
+      <img className="item__photo" src={prod.photo} alt="" />
       <div className="item__info">
-        <h3 className="item__name">{name}</h3>
-        <p className="item__price">{`Precio: usd ${price}`}</p>
+        <p className="item__categ">{prod.category}</p>
+        <h3 className="item__name">{prod.name}</h3>
+        <p className="item__price">{`Precio: US$ ${prod.price}`}</p>
       </div>
       <ItemCount
+        id={prod.id}
         stock={10}
         initial={1}
         onAdd={(count) =>

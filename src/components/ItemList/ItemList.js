@@ -1,17 +1,14 @@
 import Item from "../Item/Item";
 import "./ItemList.css";
 
-function ItemList({ products }) {
+function ItemList({ items, id }) {
   return (
     <div className="itemList">
-      {products.map((prod) => (
-        <Item
-          key={prod.id}
-          name={prod.name}
-          price={prod.price}
-          img={prod.img}
-        />
-      ))}
+      {id
+        ? items
+            .filter((prod) => prod.category === id)
+            .map((prod) => <Item key={prod.id} prod={prod} />)
+        : items.map((prod) => <Item key={prod.id} prod={prod} />)}
     </div>
   );
 }

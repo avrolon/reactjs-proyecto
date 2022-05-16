@@ -1,7 +1,7 @@
 .item {
+  width: 100%;
   background: #dde2e5;
   border-radius: 20px;
-  color: black;
   display: inline-block;
   font-size: 20px;
   justify-content: center;
@@ -11,16 +11,24 @@
   position: relative;
   float: none;
 }
-.item__img {
-  width: 280px;
-  margin-top: 20px;
+.item__photo {
+  width: 220px;
+  margin-top: 5px;
   margin-bottom: 5px;
   border-radius: 20px;
+}
+
+.item__categ {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 600;
 }
 .item__info {
   color: #eccb00;
 }
 
 .item__price {
+  margin-top: 10px;
   margin-bottom: -5px;
+  font-weight: 600;
 }

@@ -1,7 +1,6 @@
 .itemCount {
   display: inline-block;
   text-align: center;
-  border-radius: 10px;
   margin: 10px;
   padding: 23px;
 }
@@ -40,11 +39,17 @@
 .itemCount__lessBtnAdd .itemCount__lessBtnRest .itemCount__lessBtnCart :hover {
   opacity: 0.7;
 }
-
+.itemCount__addToCartBtn {
+  color: white;
+  background-color: rgb(10, 85, 142);
+  border: rgb(10, 85, 142);
+  border-radius: 50px;
+  margin-top: 10px;
+}
 p {
   margin-top: -20px;
   margin-bottom: 10px;
-  font-size: 18px;
+  font-size: 20px;
   color: black;
 }
 
