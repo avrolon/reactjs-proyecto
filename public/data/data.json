@@ -1,22 +1,14 @@
 [
   {
     "id": "01",
-    "category": "Monitores",
-    "name": "Monitor",
-    "price": "1500",
-    "photo": "/images/monitor.jpg",
-    "details": "Códigos en stock: A90L-0001-0092, A90L-0001-0093"
-  },
-  {
-    "id": "02",
     "category": "Encoders",
     "name": "Encoder",
     "price": "1100",
     "photo": "/images/encoder.jpg",
-    "details": "Códigos en stock: A860-2020-T301, A860-0304-T011, A860-0001-T001"
+    "details": "Códigos en stock: A860-0300-T001 2000P, A860-0304-T011 2000P, A860-0304-T113 3000P, A860-0300-T001 2000P, A860-0300-T111 2000P, A860-0300-T002 2500P, A860-0301-T002 2500P"
   },
   {
-    "id": "03",
+    "id": "02",
     "category": "Módulos",
     "name": "Módulo",
     "price": "800",
@@ -24,7 +16,7 @@
     "details": "Códigos en stock: A50L-0001-0096, A50L-0001-0179/15A, A50L-0001-0109"
   },
   {
-    "id": "04",
+    "id": "03",
     "category": "Coolers",
     "name": "Cooler",
     "price": "500",
@@ -32,11 +24,75 @@
     "details": "Códigos en stock: A90L-0001-0316, A90L-0001-0317, A90L-0001-0508"
   },
   {
+    "id": "04",
+    "category": "Monitores",
+    "name": "Monitor",
+    "price": "1500",
+    "photo": "/images/monitor.jpg",
+    "details": "Códigos en stock: A90L-0001-0092, A90L-0001-0093"
+  },
+  {
     "id": "05",
     "category": "Otros repuestos",
-    "name": "Otros repuestos",
+    "name": "Servomotores",
     "price": "-",
-    "photo": "/images/placa.jpg",
-    "details": "Placas, motores, fusibles, sensores, pulsadores, keyboard, conectores, keysheet."
+    "photo": "/images/servomotor.jpg",
+    "details": "Códigos en stock: modelo 0 A06B-0513-B002#7000, modelo 0S A06B-0313-B005#7000, modelo 5 A06B-0512-B003#7000, modelo 5M A06B-0642-B011, modelo 10S A06B-0315-B501#7000, modelo 5S A06B-0314-B010, modelo 5 A06B-0512-B002#7000, modelo 10 A06B-0501-B501#7000, modelo 10 A06B-0315-B001#7000"
+  },
+  {
+    "id": "06",
+    "category": "Otros repuestos",
+    "name": "Sensor MZI",
+    "price": "-",
+    "photo": "/images/sensormzi.jpg",
+    "details": "Códigos en stock: A860-2110-B001"
+  },
+  {
+    "id": "07",
+    "category": "Otros repuestos",
+    "name": "Sensor Spindle",
+    "price": "-",
+    "photo": "/images/sensor.jpg",
+    "details": "Códigos en stock: A57L-0001-0037/C, A57L-0001-0037/B"
+  },
+  {
+    "id": "08",
+    "category": "Otros repuestos",
+    "name": "Membranas",
+    "price": "-",
+    "photo": "/images/membrana.jpg",
+    "details": "Códigos en stock: A98L-0001-0518#T, A98L-0005-0019#A, A98L-0001-0519"
+  },
+  {
+    "id": "09",
+    "category": "Otros repuestos",
+    "name": "Servo Amplifier",
+    "price": "-",
+    "photo": "/images/servoamplifier.jpg",
+    "details": "Códigos en stock: A06B-6058-H334, A06B-6050-H102, A06B-6050-H103"
+  },
+  {
+    "id": "10",
+    "category": "Otros repuestos",
+    "name": "Spindle Amplifier",
+    "price": "-",
+    "photo": "/images/spindle.jpg",
+    "details": "Códigos en stock: A06B-6059-H206#H511"
+  },
+  {
+    "id": "11",
+    "category": "Otros repuestos",
+    "name": "Pulmón Hidráulico",
+    "price": "-",
+    "photo": "/images/plato.jpg",
+    "details": "Códigos en stock: Y1020 H, Y1225 H"
+  },
+  {
+    "id": "12",
+    "category": "Otros repuestos",
+    "name": "Diodo fast recovery",
+    "price": "-",
+    "photo": "/images/diodo.jpg",
+    "details": "Códigos en stock: DSI 2X61-10B"
   }
 ]

@@ -1,6 +1,9 @@
 .itemList {
+  width: 100%;
   display: flex;
-  text-align: center;
-  margin-top: 60px;
-  padding: 20px;
+  padding: 1rem;
+  flex-flow: row wrap;
+  align-content: center;
+  justify-content: center;
+  min-height: calc(100vh - 85px);
 }
