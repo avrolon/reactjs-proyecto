@@ -33,7 +33,7 @@ function ItemCount({ id, stock, initial, onAdd }) {
       <br />
       <Link to={`/itemDetail/${id}`}>
         <button className="itemCount__addToCartBtn" onClick={addCart}>
-          <i class="bi bi-cart3"></i>
+          <i class="bi bi-cart3"> Comprar</i>
         </button>
       </Link>
     </div>

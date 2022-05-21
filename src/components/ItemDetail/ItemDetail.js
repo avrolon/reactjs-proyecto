@@ -7,7 +7,9 @@ function ItemDetail({ item }) {
         <h3 className="itemDetail__title">{item.name}</h3>
         <p className="itemDetail__details">{item.details}</p>
         <p className="itemDetail__price">{`Precio: US$ ${item.price}`}</p>
-        <button className="itemDetail__addBtn">Comprar ahora</button>
+        <button className="itemDetail__addBtn">
+          <i class="bi bi-cart3"> Agregar al carrito</i>
+        </button>
       </div>
     </div>
   );
