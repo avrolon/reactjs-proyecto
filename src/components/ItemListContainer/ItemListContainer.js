@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
+import Loading from "../Loading/Loading";
 
-function ItemListContainer({ greeting }) {
+function ItemListContainer() {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
   const { id } = useParams();
@@ -19,13 +20,7 @@ function ItemListContainer({ greeting }) {
 
   return (
     <div className="itemListContainer">
-      {loading ? (
-        <div class="spinner-border text-warning" role="status">
-          <span class="sr-only">Loading...</span>
-        </div>
-      ) : (
-        <ItemList items={items} id={id} />
-      )}
+      {loading ? <Loading /> : <ItemList items={items} id={id} />}
     </div>
   );
 }

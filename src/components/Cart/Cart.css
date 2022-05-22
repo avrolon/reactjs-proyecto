@@ -1,0 +1,30 @@
+.itemCount__detail {
+  font-size: 20px;
+  list-style-type: none;
+}
+.itemCount__clearCartBtn {
+  color: white;
+  background-color: rgb(10, 85, 142);
+  margin-left: 10px;
+  margin-top: 10px;
+  border: #eccb00;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  padding-top: 0.3rem;
+  padding-bottom: 0.5rem;
+  font-size: 18px;
+}
+.itemCount__finalCartBtn {
+  color: white;
+  background-color: rgb(10, 85, 142);
+  margin-left: 10px;
+  margin-top: 10px;
+  border: #eccb00;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 5px;
+  padding-top: 0.3rem;
+  padding-bottom: 0.5rem;
+  font-size: 18px;
+}

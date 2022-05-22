@@ -8,6 +8,7 @@ function CartWidget() {
         <span className="cartWidget__icon">
           <i class="bi bi-cart3"></i>
         </span>
+        <span className="cartWidget__counter">0</span>
       </div>
     </Link>
   );
