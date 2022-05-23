@@ -7,13 +7,13 @@ export function UseCartContext() {
 }
 
 export default function CartContextProvider({ children }) {
-  const [cartList, SetCartList] = useState([]);
+  const [cartList, setCartList] = useState([]);
 
   function addCart(item) {
-    SetCartList([...cartList, item]);
+    setCartList([...cartList, item]);
   }
   function clearCart() {
-    SetCartList([]);
+    setCartList([]);
   }
 
   return (
