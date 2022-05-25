@@ -9,18 +9,36 @@ export function UseCartContext() {
 export default function CartContextProvider({ children }) {
   const [cartList, setCartList] = useState([]);
 
+  function isInCart(id) {
+    return cartList.some((prod) => prod.id === id);
+  }
   function addCart(item) {
-    setCartList([...cartList, item]);
+    if (isInCart(item.id)) {
+      let i = cartList.findIndex((prod) => prod.id === item.id);
+      const newCart = cartList;
+      newCart[i].count += item.count;
+      setCartList(newCart);
+    } else {
+      setCartList([...cartList, item]);
+    }
   }
-  function clearCart() {
-    setCartList([]);
-  }
+  const clearItem = (id) => {
+    const newCart = [...cartList];
+    let index = newCart.findIndex((prod) => prod.id === id);
+    newCart.splice(index, 1);
 
+    setCartList([...newCart]);
+  };
+
+  const clearCart = () => {
+    setCartList([]);
+  };
   return (
     <cartContext.Provider
       value={{
         cartList,
         addCart,
+        clearItem,
         clearCart,
       }}
     >

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./ItemCount.css";
 
-function ItemCount({ item, stock, initial, onAdd, handleInputType }) {
+function ItemCount({ item, stock, initial, onAdd }) {
   const [count, setCount] = useState(initial);
 
   function add() {
@@ -18,7 +18,6 @@ function ItemCount({ item, stock, initial, onAdd, handleInputType }) {
 
   function addCart() {
     onAdd(count, item.name);
-    handleInputType();
   }
 
   return (

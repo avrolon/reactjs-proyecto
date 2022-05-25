@@ -6,16 +6,13 @@ import BuyBtn from "../BuyBtn/BuyBtn";
 
 function ItemDetail({ item }) {
   const [inputType, setInputType] = useState("itemCount");
-  const { addCart, cartList } = UseCartContext();
+  const { addCart } = UseCartContext();
 
-  function onAdd(count, name) {
-    console.log(`Se agregaron ${count} unidades de ${name} al pedido`);
-    addCart({ item, count });
-  }
-  function handleInputType() {
+  function onAdd(count) {
+    addCart({ ...item, count });
     setInputType("buyBtn");
   }
-  console.log(cartList);
+
   return (
     <div className="itemDetail">
       <img className="itemDetail__photo" src={item.photo} alt="" />
@@ -24,13 +21,7 @@ function ItemDetail({ item }) {
         <p className="itemDetail__details">{item.details}</p>
         <p className="itemDetail__price">{`Precio: US$ ${item.price}`}</p>
         {inputType === "itemCount" ? (
-          <ItemCount
-            item={item}
-            initial={1}
-            stock={10}
-            onAdd={onAdd}
-            handleInputType={handleInputType}
-          />
+          <ItemCount item={item} initial={1} stock={10} onAdd={onAdd} />
         ) : (
           <BuyBtn />
         )}

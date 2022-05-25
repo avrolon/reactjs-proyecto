@@ -1,4 +1,6 @@
+import { Link } from "react-router-dom";
 import { UseCartContext } from "../../context/CartContext";
+import CartItem from "../CartItem/CartItem";
 import "./Cart.css";
 
 function Cart() {
@@ -6,16 +8,22 @@ function Cart() {
 
   return (
     <div className="cart">
-      <h2>Su pedido es el siguiente:</h2>
+      <h2>Tu carrito de compras:</h2>
       {cartList.map((prod) => (
-        <li className="itemCount__detail">
-          Producto: {prod.item.name} - Cantidad: {prod.count}
-        </li>
+        <CartItem key={prod.id} item={prod} />
       ))}
-      <button className="itemCount__clearCartBtn" onClick={clearCart}>
-        Vaciar carrito
-      </button>
-      <button className="itemCount__finalCartBtn">Finalizar compra</button>
+      {cartList.length ? (
+        <button className="itemCount__clearCartBtn" onClick={clearCart}>
+          Vaciar Carrito
+        </button>
+      ) : (
+        <p className="cart__msg">
+          No hay productos en tu carrito <i class="bi bi-emoji-frown"></i>
+        </p>
+      )}
+      <Link to="/">
+        <button className="itemCount__clearCartBtn">Volver al inicio</button>
+      </Link>
     </div>
   );
 }

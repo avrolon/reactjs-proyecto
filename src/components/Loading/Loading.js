@@ -1,7 +1,7 @@
 function Loading() {
   return (
-    <div className="loader">
-      <h2 className="loader__text">Cargando...</h2>
+    <div class="spinner-border" role="status">
+      <span class="sr-only"></span>
     </div>
   );
 }
