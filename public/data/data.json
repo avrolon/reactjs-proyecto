@@ -94,5 +94,69 @@
     "price": "50",
     "photo": "/images/diodo.jpg",
     "details": "Códigos en stock: DSI 2X61-10B"
+  },
+  {
+    "id": "13",
+    "category": "Otros repuestos",
+    "name": "Conectores de motor",
+    "price": "80",
+    "photo": "/images/conector.jpg",
+    "details": "Códigos en stock: MS3106B18-10S-ZN, MS3106B22-22S-ZN. Marca JAE"
+  },
+  {
+    "id": "14",
+    "category": "Otros repuestos",
+    "name": "Capacitor electrolítico",
+    "price": "100",
+    "photo": "/images/capacitor.jpg",
+    "details": "Códigos en stock: 3900 MFD 450 VDC"
+  },
+  {
+    "id": "15",
+    "category": "Otros repuestos",
+    "name": "Microswitch",
+    "price": "100",
+    "photo": "/images/microswitch.jpg",
+    "details": "Códigos en stock: EGT1-4 A-2000"
+  },
+  {
+    "id": "16",
+    "category": "Otros repuestos",
+    "name": "Puente rectificador",
+    "price": "100",
+    "photo": "/images/puenterectificador.jpg",
+    "details": "Códigos en stock: A50L-2001-0175"
+  },
+  {
+    "id": "17",
+    "category": "Otros repuestos",
+    "name": "Fichas Honda",
+    "price": "20",
+    "photo": "/images/fichahonda.jpg",
+    "details": "Códigos en stock: A63L-0001-0134/01 HEMBRA 50 pines, A63L-0001-0134/02 HEMBRA 20 pines"
+  },
+  {
+    "id": "18",
+    "category": "Otros repuestos",
+    "name": "Resistor",
+    "price": "50",
+    "photo": "/images/resistor.jpg",
+    "details": "Códigos en stock: "
+  },
+  {
+    "id": "19",
+    "category": "Otros repuestos",
+    "name": "Vickers",
+    "price": "100",
+    "photo": "/images/vickers.jpg",
+    "details": "Códigos en stock: DG4V 3 2A M U H 40, DGMX1 3 PP AW 22 B "
+  },
+  {
+    "id": "20",
+    "category": "Otros repuestos",
+    "name": "Interruptor de seg.",
+    "price": "10",
+    "photo": "/images/interruptor.jpg",
+    "details": "Códigos en stock: XB2-BG21"
   }
 ]
