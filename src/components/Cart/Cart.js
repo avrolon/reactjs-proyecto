@@ -34,6 +34,7 @@ function Cart() {
           No hay productos en tu carrito <i class="bi bi-emoji-frown"></i>
         </p>
       )}
+      <button className="cart__finish">Finalizar compra</button>
     </div>
   );
 }

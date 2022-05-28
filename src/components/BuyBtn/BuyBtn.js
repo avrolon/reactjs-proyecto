@@ -8,7 +8,7 @@ function BuyBtn() {
         <button className="buyBtn__goCart">Ver pedido</button>
       </Link>
       <Link to="/">
-        <button className="buyButtons__goMenu">Volver al menú</button>
+        <button className="buyButtons__goMenu">Seguir comprando</button>
       </Link>
     </div>
   );
