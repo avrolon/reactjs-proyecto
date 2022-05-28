@@ -32,3 +32,13 @@
 .cart__msg {
   padding: 50px;
 }
+
+.cart__count {
+  padding: 60px;
+  color: rgb(10, 85, 142);
+  font-weight: 800;
+}
+.cart__price {
+  color: rgb(10, 85, 142);
+  font-weight: 800;
+}
