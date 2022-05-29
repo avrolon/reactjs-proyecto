@@ -21,7 +21,7 @@ function ItemDetail({ item }) {
         <p className="itemDetail__details">{item.details}</p>
         <p className="itemDetail__price">{`Precio: US$ ${item.price}`}</p>
         {inputType === "itemCount" ? (
-          <ItemCount item={item} initial={1} stock={10} onAdd={onAdd} />
+          <ItemCount initial={1} stock={item.stock} onAdd={onAdd} />
         ) : (
           <BuyBtn />
         )}

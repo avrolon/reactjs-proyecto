@@ -2,21 +2,20 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemDetail from "../ItemDetail/ItemDetail";
 import Loading from "../Loading/Loading";
+import { getFirestore, doc, getDoc } from "firebase/firestore";
 
 function ItemDetailContainer() {
-  const [item, setitem] = useState({});
+  const [item, setItem] = useState({});
   const [loading, setLoading] = useState(true);
   const { id } = useParams();
 
   useEffect(() => {
-    setTimeout(() => {
-      fetch("/data/data.json")
-        .then((response) => response.json())
-        .then((itemsList) => itemsList.find((prod) => prod.id === id))
-        .then((data) => setitem(data))
-        .catch((err) => console.log(err))
-        .finally(() => setLoading(false));
-    }, 2000);
+    const db = getFirestore();
+    const dbQuery = doc(db, "products", id);
+    getDoc(dbQuery)
+      .then((resp) => setItem({ id: resp.id, ...resp.data() }))
+      .catch((err) => console.log(err))
+      .finally(() => setLoading(false));
   }, [id]);
 
   return (

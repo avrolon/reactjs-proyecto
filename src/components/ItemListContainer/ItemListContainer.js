@@ -1,3 +1,10 @@
+import {
+  collection,
+  getDocs,
+  getFirestore,
+  query,
+  where,
+} from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
@@ -9,18 +16,37 @@ function ItemListContainer() {
   const { id } = useParams();
 
   useEffect(() => {
-    setTimeout(() => {
-      fetch("/data/data.json")
-        .then((response) => response.json())
-        .then((data) => setItems(data))
+    const db = getFirestore();
+    const queryCollection = collection(db, "products");
+    if (!id) {
+      getDocs(queryCollection)
+        .then((resp) =>
+          setItems(
+            resp.docs.map((prod) => ({
+              id: prod.id,
+              ...prod.data(),
+            }))
+          )
+        )
         .catch((err) => console.log(err))
         .finally(() => setLoading(false));
-    }, 2000);
-  }, []);
+    } else {
+      const queryCollectionFilter = query(
+        queryCollection,
+        where("category", "==", id)
+      );
+      getDocs(queryCollectionFilter)
+        .then((resp) =>
+          setItems(resp.docs.map((prod) => ({ id: prod.id, ...prod.data() })))
+        )
+        .catch((err) => console.log(err))
+        .finally(() => setLoading(false));
+    }
+  }, [id]);
 
   return (
     <div className="itemListContainer">
-      {loading ? <Loading /> : <ItemList items={items} id={id} />}
+      {loading ? <Loading /> : <ItemList items={items} />}
     </div>
   );
 }
