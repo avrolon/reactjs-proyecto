@@ -1,16 +1,31 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { UseCartContext } from "../../context/CartContext";
-import CartItem from "../CartItem/CartItem";
+import CartList from "../CartList/CartList";
 import "./Cart.css";
 
 function Cart() {
-  const { cartList, clearCart, totalItems, totalPrice } = UseCartContext();
+  const { totalItems, orderId, createOrder } = UseCartContext();
+  const [orderSent, setOrderSent] = useState(false);
+
+  function sendOrder() {
+    setOrderSent(true);
+    createOrder();
+  }
+
   if (!totalItems) {
     return (
       <div className="cart">
-        <p className="cart__msg">
-          No hay productos en tu carrito <i class="bi bi-emoji-frown"></i>
-        </p>
+        {orderSent ? (
+          <h1>
+            El pedido nro: {orderId} ha sido registrado! A la brevedad nos
+            pondremos en contacto! Gracias por su compra
+          </h1>
+        ) : (
+          <h1 className="cart__msg">
+            No hay productos en tu carrito <i class="bi bi-emoji-frown"></i>
+          </h1>
+        )}
         <Link to="/">
           <button className="itemCount__clearCartBtn">Volver al inicio</button>
         </Link>
@@ -19,22 +34,7 @@ function Cart() {
   }
   return (
     <div className="cart">
-      <h2>Tu carrito de compras:</h2>
-      {cartList.map((prod) => (
-        <CartItem key={prod.id} item={prod} />
-      ))}
-      <p className="cart__count">{`Cantidad de unidades: ${totalItems}`}</p>
-      <p className="cart__price">{`Total: US$${totalPrice}`}</p>
-      {cartList.length ? (
-        <button className="itemCount__clearCartBtn" onClick={clearCart}>
-          Vaciar Carrito
-        </button>
-      ) : (
-        <p className="cart__msg">
-          No hay productos en tu carrito <i class="bi bi-emoji-frown"></i>
-        </p>
-      )}
-      <button className="cart__finish">Finalizar compra</button>
+      <CartList sentOrder={sendOrder} />
     </div>
   );
 }

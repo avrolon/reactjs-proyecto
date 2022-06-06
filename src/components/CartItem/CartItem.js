@@ -6,15 +6,13 @@ function CartItem({ item }) {
   function removeItem() {
     clearItem(item.id);
   }
+
   return (
     <li className="itemCount__detail">
       Producto: {item.name} <i class="bi bi-chevron-right"></i> Cantidad:{" "}
       {item.count} <i class="bi bi-chevron-right"></i> Precio por unidad: US${" "}
       {item.price}{" "}
-      <button
-        onClick={() => removeItem(item.id)}
-        className="itemCount__clearCartBtn"
-      >
+      <button onClick={removeItem} className="itemCount__clearCartBtn">
         <i class="bi bi-trash3-fill"></i>
       </button>
     </li>

@@ -21,13 +21,20 @@ function ItemListContainer() {
     if (!id) {
       getDocs(queryCollection)
         .then((resp) =>
-          setItems(
-            resp.docs.map((prod) => ({
-              id: prod.id,
-              ...prod.data(),
-            }))
-          )
+          resp.docs.map((prod) => ({ id: prod.id, ...prod.data() }))
         )
+        .then((data) =>
+          data.sort((a, b) => {
+            if (a.category > b.category) {
+              return 1;
+            }
+            if (a.category < b.category) {
+              return -1;
+            }
+            return 0;
+          })
+        )
+        .then((sorted) => setItems(sorted))
         .catch((err) => console.log(err))
         .finally(() => setLoading(false));
     } else {
