@@ -1,7 +1,7 @@
 import { UseCartContext } from "../../context/CartContext";
 import CartItem from "../CartItem/CartItem";
 
-function CartList(sendOrder) {
+function CartList() {
   const { cartList, clearCart, totalItems, totalPrice } = UseCartContext();
 
   return (
@@ -21,21 +21,6 @@ function CartList(sendOrder) {
           No hay productos en tu carrito <i class="bi bi-emoji-frown"></i>
         </p>
       )}
-      <div className="cart__Information">
-        <form>
-          <h2>
-            Por favor, completá los siguientes datos para finalizar la compra:
-          </h2>
-          <input type="text" placeholder="Nombre" required />
-          <input type="text" placeholder="Apellido" required />
-          <input type="text" placeholder="Localidad" />
-          <input type="email" placeholder="Email" required />
-          <input type="tel" placeholder="Nro. teléfono" required />
-          <button onClick={() => sendOrder} className="cart__finish">
-            Finalizar pedido
-          </button>
-        </form>
-      </div>
     </div>
   );
 }

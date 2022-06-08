@@ -3,7 +3,12 @@ import { UseCartContext } from "../../context/CartContext";
 import "./CartWidget.css";
 
 function CartWidget() {
-  const { totalItems } = UseCartContext();
+  const { cartList } = UseCartContext();
+  const totalItems = cartList.reduce(
+    (acc, item) => (acc = acc + item.count),
+    0
+  );
+
   return (
     <Link to="/cart" style={{ pointerEvents: !totalItems ? "none" : " " }}>
       <div
