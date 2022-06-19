@@ -9,6 +9,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "../ItemList/ItemList";
 import Loading from "../Loading/Loading";
+import { Footer } from "../Footer/Footer";
 
 function ItemListContainer() {
   const [items, setItems] = useState([]);
@@ -54,6 +55,7 @@ function ItemListContainer() {
   return (
     <div className="itemListContainer">
       {loading ? <Loading /> : <ItemList items={items} />}
+      <Footer />
     </div>
   );
 }
