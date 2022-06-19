@@ -24,8 +24,8 @@
 }
 .navBar__item {
   list-style: none;
-  margin: 0 15px;
-  margin-top: -20px;
+  margin: 0 10px;
+  margin-top: 1px;
   color: #adb5bd;
   font-weight: 600;
 }
