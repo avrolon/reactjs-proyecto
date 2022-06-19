@@ -9,9 +9,9 @@ function CartItem({ item }) {
 
   return (
     <li className="itemCount__detail">
-      Producto: {item.name} <i class="bi bi-chevron-right"></i> Cantidad:{" "}
-      {item.count} <i class="bi bi-chevron-right"></i> Precio por unidad: US${" "}
-      {item.price}{" "}
+      <li>Producto: {item.name}</li>
+      <li>Cantidad: {item.count}</li>
+      <li>Precio por unidad: US$ {item.price} </li>
       <button onClick={removeItem} className="itemCount__clearCartBtn">
         <i class="bi bi-trash3-fill"></i>
       </button>

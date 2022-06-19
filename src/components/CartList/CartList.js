@@ -2,7 +2,7 @@ import { UseCartContext } from "../../context/CartContext";
 import CartItem from "../CartItem/CartItem";
 
 function CartList() {
-  const { cartList, clearCart, totalItems, totalPrice } = UseCartContext();
+  const { cartList, clearCart, total, totalPrice } = UseCartContext();
 
   return (
     <div className="cart">
@@ -10,7 +10,7 @@ function CartList() {
       {cartList.map((prod) => (
         <CartItem key={prod.id} item={prod} />
       ))}
-      <p className="cart__count">{`Cantidad de unidades: ${totalItems}`}</p>
+      <p className="cart__count">{`Cantidad de unidades: ${total}`}</p>
       <p className="cart__price">{`Total: US$${totalPrice}`}</p>
       {cartList.length ? (
         <button className="itemCount__clearCartBtn" onClick={clearCart}>

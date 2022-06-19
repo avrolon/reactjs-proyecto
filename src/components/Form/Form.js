@@ -45,9 +45,9 @@ export const Form = () => {
         const id = item.id;
         const name = item.name;
         const price = item.price;
-        const quantity = item.count;
+        const count = item.count;
 
-        return { id, name, price, quantity };
+        return { id, name, price, count };
       });
       console.log(order);
       order.total = total;

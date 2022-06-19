@@ -1,12 +1,13 @@
 .cartWidget {
   display: flex;
   position: relative;
+  margin-bottom: 25px;
 }
 .cartWidget:hover {
   opacity: 0.7;
 }
 .cartWidget__icon {
-  margin-top: -40px;
+  margin-top: 1px;
   color: rgb(10, 85, 142);
   font-size: 2.3rem;
 }
