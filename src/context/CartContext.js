@@ -35,6 +35,12 @@ export default function CartContextProvider({ children }) {
   const clearCart = () => {
     setCartList([]);
   };
+
+  const total = cartList.reduce(
+    (acc, item) => (acc = acc + item.price * item.count),
+    0
+  );
+
   return (
     <cartContext.Provider
       value={{
@@ -42,6 +48,7 @@ export default function CartContextProvider({ children }) {
         addCart,
         clearItem,
         clearCart,
+        total,
       }}
     >
       {children}

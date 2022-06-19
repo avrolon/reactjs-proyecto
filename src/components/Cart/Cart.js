@@ -5,12 +5,7 @@ import "./Cart.css";
 import { Form } from "../Form/Form";
 
 export const Cart = () => {
-  const { cartList, clearCart } = UseCartContext();
-
-  const total = cartList.reduce(
-    (acc, item) => (acc = acc + item.price * item.count),
-    0
-  );
+  const { cartList, clearCart, total } = UseCartContext();
 
   return (
     <>
