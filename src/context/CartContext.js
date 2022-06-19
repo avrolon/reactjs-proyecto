@@ -15,13 +15,11 @@ export default function CartContextProvider({ children }) {
 
   function addCart(item) {
     if (isInCart(item.id)) {
-      alert("Ya agregaste este producto");
       let index = cartList.findIndex((prod) => prod.id === item.id);
       const newCartList = cartList;
       newCartList[index].count += item.count;
       setCartList(newCartList);
     } else {
-      alert(`Agregaste ${item.count} ${item.name} al carrito`);
       setCartList([...cartList, item]);
     }
   }

@@ -49,7 +49,7 @@ export const Form = () => {
 
         return { id, name, price, count };
       });
-      console.log(order);
+
       order.total = total;
 
       const queryCollectionOrders = collection(db, "orders");
