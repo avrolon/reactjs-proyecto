@@ -7,6 +7,7 @@ import swal from "sweetalert";
 import withReactContent from "sweetalert2-react-content";
 import "./Form.css";
 import { Footer } from "../Footer/Footer";
+import { Link } from "react-router-dom";
 
 export const Form = () => {
   const db = getFirestore();
@@ -62,8 +63,7 @@ export const Form = () => {
               title:
                 "Gracias por su compra " +
                 buyer.name +
-                "! A la brevedad nos pondremos en contacto 😀​",
-              text: "Su número de orden es: " + userId,
+                "! A la brevedad nos pondremos en contacto 😀",
               icon: "success",
             })
           );
@@ -122,9 +122,24 @@ export const Form = () => {
             name="phone"
             onChange={handleInputChange}
           />
-          <button type="submit" className="cart__finish">
-            Finalizar pedido
-          </button>
+          <div>
+            <button type="submit" className="cart__finish">
+              Finalizar pedido
+            </button>
+            {userId ? (
+              <h3>
+                <i class="bi bi-check2-all"></i> Pedido enviado! Nro. de pedido:{" "}
+                {userId}
+              </h3>
+            ) : (
+              <h5>El pedido aún está pendiente...</h5>
+            )}
+            <Link to="/">
+              <button type="submit" className="cart__finish">
+                Volver al inicio
+              </button>
+            </Link>
+          </div>
         </form>
       </div>
       <Footer />
