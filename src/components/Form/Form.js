@@ -12,7 +12,7 @@ import { Link } from "react-router-dom";
 export const Form = () => {
   const db = getFirestore();
   const [userId, setUserId] = useState("");
-  const { cartList } = UseCartContext();
+  const { cartList, clearAll } = UseCartContext();
   const MySwal = withReactContent(Swal);
 
   const total = cartList.reduce(
@@ -135,7 +135,7 @@ export const Form = () => {
               <h5>El pedido aún está pendiente...</h5>
             )}
             <Link to="/">
-              <button type="submit" className="cart__finish">
+              <button type="submit" className="cart__finish" onClick={clearAll}>
                 Volver al inicio
               </button>
             </Link>
