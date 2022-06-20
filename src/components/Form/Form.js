@@ -2,9 +2,7 @@ import React from "react";
 import { useState } from "react";
 import { UseCartContext } from "../../context/CartContext";
 import { collection, getFirestore, addDoc } from "firebase/firestore";
-import Swal from "sweetalert2";
 import swal from "sweetalert";
-import withReactContent from "sweetalert2-react-content";
 import "./Form.css";
 import { Footer } from "../Footer/Footer";
 import { Link } from "react-router-dom";
@@ -13,7 +11,6 @@ export const Form = () => {
   const db = getFirestore();
   const [userId, setUserId] = useState("");
   const { cartList, clearAll } = UseCartContext();
-  const MySwal = withReactContent(Swal);
 
   const total = cartList.reduce(
     (acc, item) => (acc = acc + parseFloat(item.price) * item.count),
